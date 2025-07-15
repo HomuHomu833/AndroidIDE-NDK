@@ -124,10 +124,10 @@ download_cmake() {
 
     if [ "$is_musl_cmake" = true ]; then
         if [ "$is_armv7" = true ]; then
-            wget "https://github.com/altandroid/cmake-custom/releases/download/$cmake_version/cmake-arm-linux-musleabihf.tar.xz" \
+            wget "https://github.com/HomuHomu833/cmake-custom/releases/download/$cmake_version/cmake-arm-linux-musleabihf.tar.xz" \
                 --no-verbose --show-progress -N
         else
-            wget "https://github.com/altandroid/cmake-custom/releases/download/$cmake_version/cmake-aarch64-linux-musl.tar.xz" \
+            wget "https://github.com/HomuHomu833/cmake-custom/releases/download/$cmake_version/cmake-aarch64-linux-musl.tar.xz" \
                 --no-verbose --show-progress -N
         fi
     else
@@ -325,7 +325,7 @@ else
 fi
 
 if [[ $is_musl_ndk == true ]]; then
-	download_ndk "$ndk_file_name" "https://github.com/altandroid/android-ndk-custom/releases/download/$ndk_ver_name/$ndk_file_name"
+	download_ndk "$ndk_file_name" "https://github.com/HomuHomu833/android-ndk-custom/releases/download/$ndk_ver_name/$ndk_file_name"
 elif [[ $is_lzhiyong_ndk == true ]]; then
 	download_ndk "$ndk_file_name" "https://github.com/MrIkso/AndroidIDE-NDK/releases/download/ndk/$ndk_file_name"
 else
