@@ -220,7 +220,7 @@ installing_cmake() {
 
 echo "Select with NDK version you need install?"
 echo "Notice: Only r27c and upper supported for ARM."
-select item in r17c r18b r19c r20b r21e r22b r23b r24 r26b r27b r27c r28b r29-beta1 Quit; do
+select item in r17c r18b r19c r20b r21e r22b r23b r24 r26b r27b r27c r28b r29-beta2 Quit; do
 	case $item in
 	"r17c")
 		ndk_ver="17.2.4988734"
@@ -280,15 +280,15 @@ select item in r17c r18b r19c r20b r21e r22b r23b r24 r26b r27b r27c r28b r29-be
 		is_musl_ndk=true
 		break
 		;;
-  	"r28b")
-		ndk_ver="28.1.13356709"
-		ndk_ver_name="r28b"
+  	"r28c")
+		ndk_ver="28.2.13676358"
+		ndk_ver_name="r28c"
 		is_musl_ndk=true
 		break
 		;;
-	"r29-beta1")
-		ndk_ver="29.0.13113456"
-		ndk_ver_name="r29-beta1"
+	"r29-beta2")
+		ndk_ver="29.0.13599879"
+		ndk_ver_name="r29-beta2"
 		is_musl_ndk=true
 		break
 		;;
